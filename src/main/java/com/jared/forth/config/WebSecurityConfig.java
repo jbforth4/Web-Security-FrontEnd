@@ -1,9 +1,9 @@
-package com.charter.provisioning.activationapi.clortho.config;
+package com.jared.forth.config;
 
-import com.charter.provisioning.activationapi.clortho.security.TokenHelper;
-import com.charter.provisioning.activationapi.clortho.security.auth.LogoutSuccess;
-import com.charter.provisioning.activationapi.clortho.security.auth.RestAuthenticationEntryPoint;
-import com.charter.provisioning.activationapi.clortho.security.auth.TokenAuthenticationFilter;
+import com.jared.forth.security.TokenHelper;
+import com.jared.forth.security.auth.LogoutSuccess;
+import com.jared.forth.security.auth.RestAuthenticationEntryPoint;
+import com.jared.forth.security.auth.TokenAuthenticationFilter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
@@ -87,7 +87,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     }
 
     @Override
-    public void configure(WebSecurity web) throws Exception {
+    public void configure(WebSecurity web) {
         // TokenAuthenticationFilter will ignore the below paths
         web.ignoring().antMatchers(
                 HttpMethod.POST,

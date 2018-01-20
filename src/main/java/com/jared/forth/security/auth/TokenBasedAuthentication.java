@@ -1,4 +1,4 @@
-package com.charter.provisioning.activationapi.clortho.security.auth;
+package com.jared.forth.security.auth;
 
 import org.springframework.security.authentication.AbstractAuthenticationToken;
 import org.springframework.security.core.userdetails.UserDetails;

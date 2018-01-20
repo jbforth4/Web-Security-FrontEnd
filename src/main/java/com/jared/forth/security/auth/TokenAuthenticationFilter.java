@@ -1,6 +1,6 @@
-package com.charter.provisioning.activationapi.clortho.security.auth;
+package com.jared.forth.security.auth;
 
-import com.charter.provisioning.activationapi.clortho.security.TokenHelper;
+import com.jared.forth.security.TokenHelper;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.security.core.context.SecurityContextHolder;

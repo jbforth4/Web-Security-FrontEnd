@@ -1,6 +1,6 @@
-package com.charter.provisioning.activationapi.clortho.repository;
+package com.jared.forth.repository;
 
-import com.charter.provisioning.activationapi.clortho.model.User;
+import com.jared.forth.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface UserRepository extends JpaRepository<User, Long> {

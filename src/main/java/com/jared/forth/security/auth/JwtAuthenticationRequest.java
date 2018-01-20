@@ -1,4 +1,4 @@
-package com.charter.provisioning.activationapi.clortho.security.auth;
+package com.jared.forth.security.auth;
 
 public class JwtAuthenticationRequest {
     private String username;

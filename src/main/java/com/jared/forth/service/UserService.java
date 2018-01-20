@@ -1,6 +1,6 @@
-package com.charter.provisioning.activationapi.clortho.service;
+package com.jared.forth.service;
 
-import com.charter.provisioning.activationapi.clortho.model.User;
+import com.jared.forth.model.User;
 import org.springframework.http.ResponseEntity;
 
 import java.util.List;

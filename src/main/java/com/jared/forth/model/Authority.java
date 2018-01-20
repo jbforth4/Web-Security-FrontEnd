@@ -1,4 +1,4 @@
-package com.charter.provisioning.activationapi.clortho.model;
+package com.jared.forth.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.springframework.security.core.GrantedAuthority;

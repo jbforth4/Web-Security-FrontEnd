@@ -1,9 +1,8 @@
-package com.charter.provisioning.activationapi.clortho.rest;
+package com.jared.forth.rest;
 
-import com.charter.provisioning.activationapi.clortho.model.User;
-import com.charter.provisioning.activationapi.clortho.repository.UserRepository;
-import com.charter.provisioning.activationapi.clortho.service.UserService;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.jared.forth.model.User;
+import com.jared.forth.service.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;

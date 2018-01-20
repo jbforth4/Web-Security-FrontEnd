@@ -1,8 +1,9 @@
 package com.charter.provisioning.activationapi.clortho.security;
 
 
-import com.charter.provisioning.activationapi.clortho.common.TimeProvider;
-import com.charter.provisioning.activationapi.clortho.model.User;
+import com.jared.forth.common.TimeProvider;
+import com.jared.forth.model.User;
+import com.jared.forth.security.TokenHelper;
 import org.assertj.core.util.DateUtil;
 import org.junit.Before;
 import org.junit.Test;
@@ -43,7 +44,7 @@ public class TokenHelperTest {
     }
 
     @Test
-    public void testGenerateTokenGeneratesDifferentTokensForDifferentCreationDates() throws Exception {
+    public void testGenerateTokenGeneratesDifferentTokensForDifferentCreationDates() {
         when(timeProviderMock.now())
                 .thenReturn(DateUtil.yesterday())
                 .thenReturn(DateUtil.now());
@@ -84,7 +85,7 @@ public class TokenHelperTest {
     }
 
     @Test
-    public void getUsernameFromToken() throws Exception {
+    public void getUsernameFromToken() {
         when(timeProviderMock.now()).thenReturn(DateUtil.now());
 
         final String token = createToken(device);
@@ -112,24 +113,24 @@ public class TokenHelperTest {
     }
 
     @Test
-    public void getAudienceFromToken() throws Exception {
+    public void getAudienceFromToken() {
         when(timeProviderMock.now()).thenReturn(DateUtil.now());
         device.setNormal(true);
         final String token = createToken(this.device);
 
-        assertThat(tokenHelper.getAudienceFromToken(token)).isEqualTo(tokenHelper.AUDIENCE_WEB);
+        assertThat(tokenHelper.getAudienceFromToken(token)).isEqualTo(TokenHelper.AUDIENCE_WEB);
     }
 
     @Test
-    public void getAudienceFromMobileToken() throws Exception {
+    public void getAudienceFromMobileToken() {
         when(timeProviderMock.now()).thenReturn(DateUtil.now());
         device.setMobile(true);
         final String token = createToken(this.device);
-        assertThat(tokenHelper.getAudienceFromToken(token)).isEqualTo(tokenHelper.AUDIENCE_MOBILE);
+        assertThat(tokenHelper.getAudienceFromToken(token)).isEqualTo(TokenHelper.AUDIENCE_MOBILE);
     }
 
     @Test
-    public void changedPasswordCannotBeRefreshed() throws Exception {
+    public void changedPasswordCannotBeRefreshed() {
         when(timeProviderMock.now())
                 .thenReturn(DateUtil.now());
 
@@ -140,7 +141,7 @@ public class TokenHelperTest {
     }
 
     @Test
-    public void canRefreshToken() throws Exception {
+    public void canRefreshToken() {
         when(timeProviderMock.now())
                 .thenReturn(DateUtil.now())
                 .thenReturn(DateUtil.tomorrow());

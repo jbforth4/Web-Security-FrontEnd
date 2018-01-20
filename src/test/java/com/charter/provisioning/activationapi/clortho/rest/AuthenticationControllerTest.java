@@ -1,11 +1,12 @@
 package com.charter.provisioning.activationapi.clortho.rest;
 
-import com.charter.provisioning.activationapi.clortho.common.DeviceProvider;
-import com.charter.provisioning.activationapi.clortho.common.TimeProvider;
-import com.charter.provisioning.activationapi.clortho.model.Authority;
-import com.charter.provisioning.activationapi.clortho.model.User;
 import com.charter.provisioning.activationapi.clortho.security.DeviceDummy;
-import com.charter.provisioning.activationapi.clortho.security.TokenHelper;
+import com.jared.forth.common.DeviceProvider;
+import com.jared.forth.common.TimeProvider;
+import com.jared.forth.model.Authority;
+import com.jared.forth.model.User;
+import com.jared.forth.rest.AuthenticationController;
+import com.jared.forth.security.TokenHelper;
 import org.assertj.core.util.DateUtil;
 import org.junit.Before;
 import org.junit.Test;

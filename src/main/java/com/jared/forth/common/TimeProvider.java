@@ -1,4 +1,4 @@
-package com.charter.provisioning.activationapi.clortho.common;
+package com.jared.forth.common;
 
 import org.springframework.stereotype.Component;
 

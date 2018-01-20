@@ -3,13 +3,13 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.charter.provisioning.activationapi</groupId>
-	<artifactId>clortho</artifactId>
+	<groupId>com.jared.forth</groupId>
+	<artifactId>Web-login</artifactId>
 	<version>0.1.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>clortho</name>
-	<description>keymaster for zuul</description>
+	<name>Web-login</name>
+	<description>FrontEnd for Database</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -107,11 +107,6 @@
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-lang3</artifactId>
 			<version>3.6</version>
-		</dependency>
-		<dependency>
-			<groupId>com.charter.health</groupId>
-			<artifactId>charter-health</artifactId>
-			<version>1.4</version>
 		</dependency>
 		<dependency>
 			<groupId>org.spockframework</groupId>

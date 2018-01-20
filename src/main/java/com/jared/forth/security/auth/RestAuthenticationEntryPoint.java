@@ -1,4 +1,4 @@
-package com.charter.provisioning.activationapi.clortho.security.auth;
+package com.jared.forth.security.auth;
 
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.web.AuthenticationEntryPoint;

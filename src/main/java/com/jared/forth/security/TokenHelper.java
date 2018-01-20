@@ -1,7 +1,7 @@
-package com.charter.provisioning.activationapi.clortho.security;
+package com.jared.forth.security;
 
-import com.charter.provisioning.activationapi.clortho.common.TimeProvider;
-import com.charter.provisioning.activationapi.clortho.model.User;
+import com.jared.forth.common.TimeProvider;
+import com.jared.forth.model.User;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;

@@ -12,7 +12,7 @@ server:
 
 spring:
   profiles:
-    active: sit
+    active: dev
 
 ---
 spring:
@@ -27,15 +27,4 @@ spring:
     show-sql: true
     hibernate:
       ddl-auto: update
----
-spring:
-  profiles: sit
-  datasource:
-    url: jdbc:postgresql://22.85.211.3:5432/api_auth
-    username: authuser
-    password: authus3r
-    driverClassName: org.postgresql.Driver
-  jpa:
-    database: POSTGRESQL
-    hibernate:
-      ddl-auto: update
+v

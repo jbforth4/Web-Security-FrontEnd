@@ -1,4 +1,4 @@
-package com.charter.provisioning.activationapi.clortho.model;
+package com.jared.forth.model;
 
 public class UserTokenState {
     private String access_token;

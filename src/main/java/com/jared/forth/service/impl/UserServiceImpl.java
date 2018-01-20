@@ -1,10 +1,9 @@
-package com.charter.provisioning.activationapi.clortho.service.impl;
+package com.jared.forth.service.impl;
 
-import com.charter.provisioning.activationapi.clortho.model.User;
-import com.charter.provisioning.activationapi.clortho.repository.UserRepository;
-import com.charter.provisioning.activationapi.clortho.service.UserService;
+import com.jared.forth.model.User;
+import com.jared.forth.repository.UserRepository;
+import com.jared.forth.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.AccessDeniedException;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;

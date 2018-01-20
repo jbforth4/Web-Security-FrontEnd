@@ -1,7 +1,7 @@
-package com.charter.provisioning.activationapi.clortho.service.impl;
+package com.jared.forth.service.impl;
 
-import com.charter.provisioning.activationapi.clortho.model.User;
-import com.charter.provisioning.activationapi.clortho.repository.UserRepository;
+import com.jared.forth.model.User;
+import com.jared.forth.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
