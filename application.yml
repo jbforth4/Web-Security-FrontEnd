@@ -1,0 +1,41 @@
+app:
+  name: clortho
+
+jwt:
+  header: Authorization
+  expires_in: 300 # 5 minutes
+  mobile_expires_in: 600 # 60 minutes
+  secret: queenvictoria
+  cookie: AUTH-TOKEN
+server:
+ port: 9125
+
+spring:
+  profiles:
+    active: sit
+
+---
+spring:
+  profiles: dev
+  datasource:
+    url: jdbc:postgresql://localhost:5432/api_auth
+    username: authus3r
+    password: authus3r
+    driverClassName: org.postgresql.Driver
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+---
+spring:
+  profiles: sit
+  datasource:
+    url: jdbc:postgresql://22.85.211.3:5432/api_auth
+    username: authuser
+    password: authus3r
+    driverClassName: org.postgresql.Driver
+  jpa:
+    database: POSTGRESQL
+    hibernate:
+      ddl-auto: update

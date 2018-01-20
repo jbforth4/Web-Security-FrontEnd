@@ -1,0 +1,43 @@
+<div ng-show="authenticated">
+	<p>Welcome <b>{{user.firstName}} {{user.lastName}}</b></p>
+	<p>
+		<code ng-repeat="authority in user.authorities">{{authority.authority | limitTo:999:5}}</code>
+	</p>
+</div>
+<div ng-show="!authenticated">
+	<p>Hi there, guest.</p><br>
+</div>
+<div ng-show="authenticated">
+    <p>Click the links below and see the result.</p>
+</div>
+<div style="margin-bottom: 10px;">
+    <button type="button" class="btn btn-info" ng-click="showFormFunc()" ng-show="authenticated">Add New User</button>
+    <button type="button" class="btn btn-info" ng-click="getAllUserInfo()" ng-show="authenticated">Display All Users</button>
+</div>
+<div style="margin-bottom:auto" ng-show="showForm" class="col-sm-6 col-lg-4">
+    <form ng-submit="processForm(email, enabled, firstName, lastName, userName, password, phoneNumber)" name="myForm">
+        Email: <br>
+        <input type="text" ng-model="email"><br>
+        Enabled (true/false): <br>
+        <input type="text" ng-model="enabled"><br>
+        First Name: <br>
+        <input type="text" ng-model="firstName"><br>
+        Last Name: <br>
+        <input type="text" ng-model="lastName"><br>
+        UserName: <br>
+        <input type="text" ng-model="userName"><br>
+        Password: <br>
+        <input type="password" ng-model="password"><br>
+        Phone Number: <br>
+        <input type="text" ng-model="phoneNumber"><br><br>
+        <button type="submit" class="btn btn-primary" value="Submit">Submit</button>
+        <button type="reset" class="btn btn-info" value="Reset">Reset</button>
+    </form>
+</div>
+<div class="alert {{responseBoxClass}}" ng-show="serverResponse">
+    <b>Server Response:</b>
+    <pre>Path: /{{serverResponse.config.url}}</pre>
+    <pre>Method: {{serverResponse.config.method}}</pre>
+    <pre>Status: {{serverResponse.status}}</pre>
+    <pre>Data: {{serverResponse.data}}</pre>
+</div>
